@@ -4,6 +4,14 @@ body,
     height: 100%;
 }
 
+.title{
+  color:#2c3d4d;
+}
+
+p{
+  color:#999;
+}
+
 /* Navigation*/
 .navbar {
     background-color:#fff;
@@ -28,8 +36,6 @@ body,
 
 }
 
-
-/*Call to action*/
 .flex-center {
     color: #fff;
 }
@@ -68,6 +74,12 @@ body,
   background-size: cover;
 }
 
+footer{
+  position:relative;
+  top:0;
+  left:0;
+}
+
 footer.page-footer {
     background-color: #fff;
     margin-top: 2rem;
@@ -75,7 +87,15 @@ footer.page-footer {
 }
 
 footer.page-footer li a{
-    color:#ccc;
+    color:#999;
+}
+
+input:focus:invalid{
+  color:red;
+}
+
+input:valid{
+  color:lime;
 }
 
 @media only screen and (max-width: 768px) {
@@ -85,5 +105,8 @@ footer.page-footer li a{
     #section-3{
       top:100px;
       padding-top:0;
+    }
+    footer{
+      top:100px;
     }
 }

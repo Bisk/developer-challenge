@@ -57,7 +57,9 @@
         <div class="full-bg-img flex-center">
             <ul class="container text-left">
                 <li class="row">
-                    <h1 class="h1-responsive wow fadeInDown col-8" data-wow-delay="0.2s">We've created the product that will help your startup to look even better.</h1>
+                    <h1 class="h1-responsive wow fadeInDown col-8" data-wow-delay="0.2s">
+                      <strong>We've created the product that will help your startup to look even better.</strong>
+                    </h1>
                 </li>
                 <li>
                     <h2 class="h2-responsive wow fadeInDown col-12" data-wow-delay="0.4s">You have the design, you have the code</h2>
@@ -70,7 +72,9 @@
       <div id="section-2-text">
         <div class="row">
           <div class=" col-sm-12 col-lg-6">
-            <h2 class="h2-responsive wow fadeInLeft" data-wow-delay="0.2s">We've created the product that will help your startup to look even better.</h2>
+            <h2 class="h2-responsive wow fadeInLeft title" data-wow-delay="0.2s">
+              <strong>We've created the product that will help your startup to look even better.</strong>
+            </h2>
           </div>
         </div>
         <br>
@@ -84,10 +88,10 @@
       <hr class="wow fadeIn">
 
       <section id="best-features">
-        <div class="row">
+        <div class="row d-flex justify-content-between">
             <!--First columnn-->
-            <div class="col-sm-12 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
-              <h4>High Resolution</h4>
+            <div class="col-sm-12 col-lg-3 wow fadeIn" data-wow-delay="0.2s">
+              <h4 class="title"><strong>High Resolution</strong></h4>
               <p>
                 We did a 2.5K size high resolution photo that will suit even for a very large site.
               </p>
@@ -95,8 +99,8 @@
             <!--First columnn-->
 
             <!--Second columnn-->
-            <div class="col-sm-12 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
-              <h4>Easy to use</h4>
+            <div class="col-sm-12 col-lg-3 wow fadeIn" data-wow-delay="0.4s">
+              <h4 class="title"><strong>Easy to use</strong></h4>
               <p>
                 To get started, you select the desired sample and base the entire website on it. Its that simple!
               </p>
@@ -104,8 +108,8 @@
             <!--Second columnn-->
 
             <!--Third columnn-->
-            <div class="col-sm-12 col-lg-4 wow fadeIn" data-wow-delay="0.6s">
-              <h4>Feel our design</h4>
+            <div class="col-sm-12 col-lg-3 wow fadeIn" data-wow-delay="0.6s">
+              <h4 class="title"><strong>Feel our design</strong></h4>
               <p>
                 Samples will show you the feeling of how to play around using the components.
               </p>
@@ -137,15 +141,15 @@
               </div>
               <br><br>
               <div class="row">
-                <h3 class="h3-responsive">Multi useful components</h3>
+                <h3 class="h3-responsive"><strong>Multi useful components</strong></h3>
                 <br><br>
-                <p>
+                <section>
                   Startup Design Framework contains components and complex blocks which can easily be integrated into almost any design. All of these components are made in the same style.
-                </p>
+                </section>
               </div>
               <br><br>
               <div class="row">
-                <a class="btn btn-outline-success" href="#">TRY IT NOW</a>
+                <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#signUpForm">TRY IT NOW</a>
               </div>
             </div>
           </div>
@@ -155,8 +159,6 @@
 
     <!--Footer-->
     <footer class="page-footer center-on-small-only">
-
-        <!--Footer Links-->
         <div class="container">
             <div class="row d-flex justify-content-between">
 
@@ -212,18 +214,56 @@
                 <!--Fifth column-->
                 <div class="col-sm-12 col-lg-2">
                     <h5 class="title"><strong>Subscribe</strong></h5>
-                    <div class="input-group" style="border:2px solid #eceeef;border-radius:8px;">
-                      <input type="text" class="form-control" placeholder="E-mail" aria-describedby="basic-addon" style="padding-left:20px;">
-                      <span class="input-group-addon" id="basic-addon" style="border-top-right-radius:8px;border-bottom-right-radius:8px;"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                    </div>
+                    <form>
+                      <div class="input-group" style="border:2px solid #eceeef;border-radius:8px;">
+                        <input type="text" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="E-mail" aria-describedby="basic-addon" style="padding-left:20px;">
+                        <button class="input-group-addon" id="basic-addon" style="border-top-right-radius:8px;border-bottom-right-radius:8px;"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                      </div>
+                    </form>
                 </div>
                 <!--/.Fifth column-->
             </div>
         </div>
-        <!--/.Footer Links-->
     </footer>
-    <!--/.Footer-->
 
+    <div class="modal fade" id="signUpForm" tabindex="-1" role="dialog" aria-labelledby="Sign Up" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="md-form">
+                          <label for="name">
+                            Your Name
+                          </label>
+                          <input type="text" name="name" class="form-control" id="name" required>
+                        </div>
+                        <div class="md-form">
+                          <label for="email">
+                            E-mail
+                          </label>
+                          <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                        </div>
+                        <div class="md-form">
+                          <label for="phone">
+                            Phone Number
+                          </label>
+                          <input type="tel" name="phone" class="form-control" id="phone" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3}).*[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-default">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- SCRIPTS -->
 
@@ -239,12 +279,21 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
-    <!--Google Maps-->
-    <script src="//maps.google.com/maps/api/js"></script>
-
     <!-- Animations init-->
     <script>
         new WOW().init();
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $("#phone").blur(function(){
+          var val = $(this).val();
+
+          val = val.toString();
+
+          console.log(val);
+        });
+      });
     </script>
 
 </body>
