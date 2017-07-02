@@ -22,7 +22,7 @@
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-toggleable-md navbar-light fixed-top scrolling-navbar">
+    <nav class="navbar navbar-toggleable-md navbar-light fixed-top">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -89,36 +89,27 @@
 
       <section id="best-features">
         <div class="row d-flex justify-content-between">
-            <!--First columnn-->
             <div class="col-sm-12 col-lg-3 wow fadeIn" data-wow-delay="0.2s">
               <h4 class="title"><strong>High Resolution</strong></h4>
               <p>
                 We did a 2.5K size high resolution photo that will suit even for a very large site.
               </p>
             </div>
-            <!--First columnn-->
-
-            <!--Second columnn-->
             <div class="col-sm-12 col-lg-3 wow fadeIn" data-wow-delay="0.4s">
               <h4 class="title"><strong>Easy to use</strong></h4>
               <p>
                 To get started, you select the desired sample and base the entire website on it. Its that simple!
               </p>
             </div>
-            <!--Second columnn-->
-
-            <!--Third columnn-->
             <div class="col-sm-12 col-lg-3 wow fadeIn" data-wow-delay="0.6s">
               <h4 class="title"><strong>Feel our design</strong></h4>
               <p>
                 Samples will show you the feeling of how to play around using the components.
               </p>
             </div>
-            <!--Third columnn-->
         </div>
       </section>
     </div>
-    <!--/ Main container-->
 
     <div class="hm-black-light">
       <div class="flex-center" id="section-3">
@@ -141,15 +132,19 @@
               </div>
               <br><br>
               <div class="row">
-                <h3 class="h3-responsive"><strong>Multi useful components</strong></h3>
-                <br><br>
-                <section>
+                <div class="col-sm-10 col-lg-8">
+                  <h3 class="h3-responsive"><strong>Multi useful components</strong></h3>
+                </div>
+                <br>
+                <section class="col-sm-10 col-lg-8">
                   Startup Design Framework contains components and complex blocks which can easily be integrated into almost any design. All of these components are made in the same style.
                 </section>
               </div>
               <br><br>
               <div class="row">
-                <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#signUpForm">TRY IT NOW</a>
+                <div class="col-sm-12 text-center">
+                  <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#signUpForm">TRY IT NOW</a>
+                </div>
               </div>
             </div>
           </div>
@@ -161,57 +156,42 @@
     <footer class="page-footer center-on-small-only">
         <div class="container">
             <div class="row d-flex justify-content-between">
-
-                <!--First column-->
-                <div class="col-sm-12 col-lg-2">
+                <div class="col-sm-12 col-lg-2 hidden-lg-down">
                     <h5 class="title"><strong>Startup</strong></h5>
                 </div>
-                <!--/.First column-->
+                <div class="col-sm-12 col-lg-8">
+                  <div class="row">
+                    <div class="col">
+                        <h5 class="title"><strong>About</strong></h5>
+                        <ul>
+                          <li><a href="#!">About Us</a></li>
+                          <li><a href="#!">Blog</a></li>
+                          <li><a href="#!">Team</a></li>
+                          <li><a href="#!">Career</a></li>
+                          <li><a href="#!">Contact</a></li>
+                        </ul>
+                    </div>
 
-                <hr class="hidden-md-up">
+                    <div class="col">
+                        <h5 class="title"><strong>Work</strong></h5>
+                        <ul>
+                            <li><a href="#!">Our Portfolio</a></li>
+                            <li><a href="#!">Latest Work</a></li>
+                            <li><a href="#!">Brands</a></li>
+                        </ul>
+                    </div>
 
-                <!--Second column-->
-                <div class="col-sm-12 col-lg-2">
-                    <h5 class="title"><strong>About</strong></h5>
-                    <ul>
-                      <li><a href="#!">About Us</a></li>
-                      <li><a href="#!">Blog</a></li>
-                      <li><a href="#!">Team</a></li>
-                      <li><a href="#!">Career</a></li>
-                      <li><a href="#!">Contact</a></li>
-                    </ul>
+                    <div class="col">
+                        <h5 class="title"><strong>Stuff</strong></h5>
+                        <ul>
+                            <li><a href="#!">Privacy</a></li>
+                            <li><a href="#!">Terms</a></li>
+                            <li><a href="#!">Advertise</a></li>
+                        </ul>
+                    </div>
+                  </div>
                 </div>
-                <!--/.Second column-->
 
-                <hr class="hidden-md-up">
-
-                <!--Third column-->
-                <div class="col-sm-12 col-lg-2">
-                    <h5 class="title"><strong>Work</strong></h5>
-                    <ul>
-                        <li><a href="#!">Our Portfolio</a></li>
-                        <li><a href="#!">Latest Work</a></li>
-                        <li><a href="#!">Brands</a></li>
-                    </ul>
-                </div>
-                <!--/.Third column-->
-
-                <hr class="hidden-md-up">
-
-                <!--Fourth column-->
-                <div class="col-sm-12 col-lg-2">
-                    <h5 class="title"><strong>Stuff</strong></h5>
-                    <ul>
-                        <li><a href="#!">Privacy</a></li>
-                        <li><a href="#!">Terms</a></li>
-                        <li><a href="#!">Advertise</a></li>
-                    </ul>
-                </div>
-                <!--/.Fourth column-->
-
-                <hr class="hidden-md-up">
-
-                <!--Fifth column-->
                 <div class="col-sm-12 col-lg-2">
                     <h5 class="title"><strong>Subscribe</strong></h5>
                     <form>
@@ -221,7 +201,6 @@
                       </div>
                     </form>
                 </div>
-                <!--/.Fifth column-->
             </div>
         </div>
     </footer>
@@ -284,17 +263,7 @@
         new WOW().init();
     </script>
 
-    <script>
-      $(document).ready(function(){
-        $("#phone").blur(function(){
-          var val = $(this).val();
-
-          val = val.toString();
-
-          console.log(val);
-        });
-      });
-    </script>
+    <script type="text/javascript" src="js/phoneNumberValidation.js"></script>
 
 </body>
 
