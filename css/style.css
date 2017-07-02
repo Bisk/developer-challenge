@@ -27,7 +27,7 @@ p{
 }
 
 .nav-item a{
-
+  margin-top:10px;
 }
 
 .flex-center {
@@ -96,6 +96,14 @@ input:valid{
 @media only screen and (max-width: 768px) {
     .navbar {
         background-color: #fff;
+    }
+    #section-2-text{
+      top:20px;
+      height:220px;
+    }
+    #best-features{
+      top:20px;
+      height:220px;
     }
     #section-3{
       top:100px;
