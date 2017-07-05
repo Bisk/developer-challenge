@@ -8,6 +8,7 @@ $(document).ready(function(){
 
       if(num.length >= 10 && num.length <= 15){
         $(this).css('color','lime');
+        document.getElementById('phone').setCustomValidity("");
         var areaCode = num.substring(num.length-10,num.length - 7);
         var first3 = num.substring(num.length-7,num.length - 4);
         var last4 = num.substring(num.length - 4);
@@ -29,16 +30,19 @@ $(document).ready(function(){
         for(var i = 0; i < forbiddenAreaCodes.length; i++){
           if(forbiddenAreaCodes[i] == areaCode){
             $(this).css('color','red');
+            document.getElementById('phone').setCustomValidity("false");
           }
         }
 
         for(var j = 0; j < forbiddenPhoneNumbers.length; j++){
           if(forbiddenPhoneNumbers[j] == allTen){
             $(this).css('color','red');
+            document.getElementById('phone').setCustomValidity("false");
           }
         }
       }else{
         $(this).css('color','red');
+        document.getElementById('phone').setCustomValidity("false");
       }
     }
   });

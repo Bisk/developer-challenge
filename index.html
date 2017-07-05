@@ -244,7 +244,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-danger" data-dismiss="modal">CLOSE</button>
-                    <button type="button" class="btn btn-default">SIGN UP</button>
+                    <button type="button" class="btn btn-default" onClick="checkForm()">SIGN UP</button>
                 </div>
             </div>
         </div>
@@ -272,6 +272,20 @@
     <script type="text/javascript" src="js/phoneNumberValidation.js"></script>
 
     <script type="text/javascript" src="js/consoleMsg.js"></script>
+
+    <script>
+      function checkForm(){
+        var name = document.getElementById('name').checkValidity();
+        var email = document.getElementById('email').checkValidity();
+        var phone = document.getElementById('phone').checkValidity();
+
+        if(!name || !email || !phone){
+          alert('Missing or Invalid information in the form... Please look for the text in red to determine what needs to be changed.')
+        }else{
+          alert('Success! Your Form has been submit!')
+        }
+      }
+    </script>
 
 </body>
 
