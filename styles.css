@@ -1,0 +1,18 @@
+h1 {
+  color: white !important;
+}
+
+section {
+  width: 100%;
+}
+
+.darkgray {
+  background-color: rgb(42,62,79);
+  color: white;
+}
+
+.btn-default {
+    color: rgb(0, 178, 113);
+    background-color: transparent;
+    border-color: rgb(0, 178, 113);
+}
