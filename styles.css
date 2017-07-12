@@ -1,9 +1,24 @@
-h1 {
+ * {
+   list-style-type: none;
+ }
+
+.jumbotron h1 {
   color: white !important;
+  font-size: 2em;
 }
 
 section {
+  padding: 20px 0;
   width: 100%;
+}
+
+.row {
+  margin: 30px -15px;
+  padding: 20px 0;
+}
+
+p {
+  font-size: 1.1em
 }
 
 .darkgray {
