@@ -4,7 +4,9 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="https://www.bisk.com/css/main.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+      <!-- <link rel="stylesheet" href="https://www.bisk.com/css/main.css"> -->
       <style>
         .hero {
             height: auto;
@@ -17,47 +19,71 @@
       </style>
     </head>
     <body>
+      <nav>
+        <ul class="nav nav-pills navbar-right">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+      </nav>
       <section id="hero-home" class="jumbotron jumbotron-fluid hero">
         <div class="vc-parent container">
           <div class="vc-block p-y-2">
-            <h1 class="display-1 text-uppercase text-inverted">Bisk Public Developer Challenge</h1>
+            <h1 class="display-1 text-uppercase text-inverted">We've created the product that will help your startup look better</h1>
+            <h2>You have the design, you have the code</h2>
           </div>
         </div>
       </section>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="">
-            <h2>Bisk online front end developer challenge.</h2>
+  <div class="col-xs-6">
+    <h3>We've created the product that will help your startup to look better</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsum totam repellendus deleniti dolorem vel est autem culpa id, quas, doloribus! Excepturi consequuntur placeat molestias assumenda accusantium rerum ratione nostrum.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-4">
+    <h4>High Resolution</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+  </div>
+  <div class="col-xs-12 col-md-4">
+    <h4>Easy to use</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+  </div>
+  <div class="col-xs-12 col-md-4">
+    <h4>Feel our design</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+  </div>
+</div>
+<section class="darkgray">
+  <div class="row darkgray">
+    <div class="col-xs-12 col-md-6">
+      <img class="img-responsive" src="./resources/product-image.jpg" alt="product image">
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="row">
+        <div class="col-xs-1"><i class="fa fa-television" aria-hidden="true"></i></div>
+        <div class="col-xs-1"><i class="fa fa-television" aria-hidden="true"></i></div>
+        <div class="col-xs-1"><i class="fa fa-television" aria-hidden="true"></i></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>Multi useful components</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <button type="button" class="btn btn-default">TRY IT NOW</button>
 
-            <h3>Description</h3>
-
-            <p>The goal of this challenge is to develop as much of the layout of this single landing page as possible utilizing the bootstrap 4+ css framework. Complete as much of this challenge in the shortest amount of time you can from initial checkin to completed project. We would like to see your thinking process, your knowledge of SASS, LESS and/or CSS, and how you would go about developing a form and then use your knowledge of javascript to validate a lead form. You can develop the lead form and validation using any method you choose. The important thing to show is how you would go about putting in place some form of DOM manipulation to display form errors and prevent form submission without validated field information.</p>
-
-            <p>The project itself can be developed using your language of choice, HTML, PHP, Node, Ruby, and should be optimized for both Desktop and Mobile view ports.</p>
-
-            <p>Resources for the hero image and icons used in the layout are in the resources folder within this project.</p>
-
-            <p>Good Luck!!!</p>
-
-            <p><strong>The challenge is the following:</strong>
-              <ul>
-                <li>Create your own branch within this repo - firstname-lastname</li>
-                <li>Check in your branch to the repo to begin the challenge</li>
-                <li>Check in your code as you develop so that we can see your progress as you add functionality</li>
-                <li>Develop the layout using clean CSS styling techniques utilizing as much out of the box bootstrap styling as possible.</li>
-                <li>From the CTA button [ TRY IT NOW ] I would like a short form modal/or slider to appear asking for name, email and phone.</li>
-                <li>Validate the lead form with required fields and highlight errors requiring the fields with proper validation rules.
-                  <ul>
-                    <li>phone should be validated with digits between 10 and 15 numbers</li>
-                    <li>email should begin with a minimum of two alpha characters followed by the @ symbol followed by a minimum of two alpha characters followed by a period, and ending with a minimum of two alpha characters after the period.</li>
-                  </ul>
-                </li>
-                <li>Check in the final landing page and then email the team letting us know you have completed this challenge - <a href="mailto:marketing-developers@bisk.com">marketing-developers@bisk.com</a></li>
-              </ul>
-            </P>
-            <div class="col-md-12"><img src="website-challenge.png" /></div>
-          </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+<footer>
+
+</footer>
+
+
+        <div class="col-md-12"><img src="website-challenge.png" /></div>
+      </div>
+      <script src="https://use.fontawesome.com/4320b8ddd2.js"></script>
     </body>
 </html>
