@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "description": "Yeoman workflow for ux-frontend",
   "dependencies": {
-    "imagemin": "^4.0.0"
+    "imagemin": "^4.0.0",
+    "jquery": "^3.2.1"
   },
   "devDependencies": {
     "bower": "^1.7.0",
