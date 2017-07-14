@@ -2,6 +2,14 @@
    list-style-type: none;
  }
 
+ .lmar30 {
+   margin-left: 20px;
+ }
+
+ ul {
+   padding-left: 0;
+ }
+
  .navbar-default {
      background-color: transparent;
      border-color: transparent;
@@ -14,13 +22,18 @@
      font-size: 1.5em;
   }
 
+.logo {
+  padding: 5px;
+}
+
 a {
     color: #666;
   }
 
-a:hover {
-  background-color: rgb(0, 178, 113);
-}
+  .nav>li>a:focus, .nav>li>a:hover {
+      background-color: rgba(0, 178, 113, .5);
+      color: white;
+  }
 
 small {
   color: white !important;
@@ -34,6 +47,10 @@ small {
   min-height: 400px;
 }
 
+h2 {
+  font-size: 28px;
+}
+
 section {
   padding: 20px 0;
   width: 100%;
@@ -45,7 +62,8 @@ section {
 }
 
 p {
-  font-size: 1.1em
+  font-size: 1.1em;
+  color: rgb(146, 149, 152);
 }
 
 .darkgray {
@@ -53,14 +71,35 @@ p {
   color: white;
 }
 
+.darkgray.row {
+  padding: 40px 0 0 0;
+}
+
 .btn-default {
     color: rgb(0, 178, 113);
     background-color: transparent;
     border-color: rgb(0, 178, 113);
+    margin-top: 30px;
 }
 
 .signIn {
   margin: 10px 0 0 30px;
   color: white;
   background-color: rgb(0, 178, 113);
+}
+
+footer .form-group {
+  max-width: 300px;
+}
+
+footer li {
+  color: rgb(146, 149, 152);
+}
+
+footer .input-group-addon {
+  background-color: rgb(146, 149, 152);
+}
+
+footer i {
+  color: white;
 }
