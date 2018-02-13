@@ -15,6 +15,11 @@ body
 
 .card
   border: 0
+  a
+    text-decoration: none
+    color: $mid-grey !important
+    &:hover
+      color: $green !important
 
 .push-down-card
   padding-top: 80px
@@ -57,9 +62,6 @@ body
     border-radius: 8px
     &:hover
       background-color: $dark-green
-
-// .navbar-toggler[aria-expanded="false"]
-//   margin-right: -70%
 
 .icon-row
   padding-bottom: 300px
@@ -120,3 +122,13 @@ body
 
 .invalid-input
   border-color: red !important
+
+.btn-subscribe
+  background-color: $mid-grey
+  color: $white
+  cursor: pointer
+  &:hover
+    color: $green
+
+.input-subscribe
+  width: 80%

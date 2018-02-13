@@ -4,6 +4,11 @@ body {
 
 .card {
   border: 0; }
+  .card a {
+    text-decoration: none;
+    color: #7F8C8D !important; }
+    .card a:hover {
+      color: #29BB9C !important; }
 
 .push-down-card {
   padding-top: 80px; }
@@ -106,5 +111,15 @@ body {
 
 .invalid-input {
   border-color: red !important; }
+
+.btn-subscribe {
+  background-color: #7F8C8D;
+  color: #FFFFFF;
+  cursor: pointer; }
+  .btn-subscribe:hover {
+    color: #29BB9C; }
+
+.input-subscribe {
+  width: 80%; }
 
 /*# sourceMappingURL=style.css.map */
