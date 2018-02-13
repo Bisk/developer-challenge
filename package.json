@@ -29,6 +29,7 @@
     "grunt-jekyll": "~0.4.2",
     "grunt-svgmin": "^2.0.0",
     "grunt-usemin": "~2.4.0",
+    "grunt-vue": "^0.1.5",
     "http-proxy": "^1.14.0",
     "load-grunt-tasks": "~0.6.0",
     "time-grunt": "~0.4.0"

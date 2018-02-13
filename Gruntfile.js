@@ -28,7 +28,7 @@ module.exports = function (grunt) {
   // Load all Grunt tasks
   require('load-grunt-tasks')(grunt);
   // Read package version
-  var pkg = require('./package.json');
+   var pkg = require('./package.json');
 
 
   grunt.initConfig({
