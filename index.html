@@ -4,60 +4,130 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="https://www.bisk.com/css/main.css">
-      <style>
-        .hero {
-            height: auto;
-            padding-top: 90px;
-            background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url(//s3.amazonaws.com/bisk-com/img/img-student-coffee-shop.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-      </style>
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	    <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-      <section id="hero-home" class="jumbotron jumbotron-fluid hero">
-        <div class="vc-parent container">
-          <div class="vc-block p-y-2">
-            <h1 class="display-1 text-uppercase text-inverted">Bisk Public Developer Challenge</h1>
+      <div class="container-fluid">
+        <div class="row height-100">
+          <div class="col-lg-1 col-md-1 d-none d-md-block"></div>
+          <div class="col-lg-10 col-md-10 col-sm-11">
+            <nav class="navbar navbar-expand-md navbar-light height-100">
+              <a class="navbar-brand d-flex align-items-center brand-link" href="#" >
+                <img src="https://raw.githubusercontent.com/Bisk/developer-challenge/master/resources/logo-icon.png" width="30" height="30" class="d-inline-block align-top brand-image" alt="">
+                <span class="brand-title">
+                  &nbsp;&nbsp;<strong>Startup</strong>
+                </span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav landing-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">WORK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link btn btn-success white-text">
+                      SIGN IN
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
         </div>
-      </section>
-      <div class="container">
-        <div class="row">
-          <div class="">
-            <h2>Bisk online front end developer challenge.</h2>
 
-            <h3>Description</h3>
-
-            <p>The goal of this challenge is to develop as much of the layout of this single landing page as possible utilizing the bootstrap 4+ css framework. Complete as much of this challenge in the shortest amount of time you can from initial checkin to completed project. We would like to see your thinking process, your knowledge of SASS, LESS and/or CSS, and how you would go about developing a form and then use your knowledge of javascript to validate a lead form. You can develop the lead form and validation using any method you choose. The important thing to show is how you would go about putting in place some form of DOM manipulation to display form errors and prevent form submission without validated field information.</p>
-
-            <p>The project itself can be developed using your language of choice, HTML, PHP, Node, Ruby, and should be optimized for both Desktop and Mobile view ports.</p>
-
-            <p>Resources for the hero image and icons used in the layout are in the resources folder within this project.</p>
-
-            <p>Good Luck!!!</p>
-
-            <p><strong>The challenge is the following:</strong>
-              <ul>
-                <li>Create your own branch within this repo - firstname-lastname</li>
-                <li>Check in your branch to the repo to begin the challenge</li>
-                <li>Check in your code as you develop so that we can see your progress as you add functionality</li>
-                <li>Develop the layout using clean CSS styling techniques utilizing as much out of the box bootstrap styling as possible.</li>
-                <li>From the CTA button [ TRY IT NOW ] I would like a short form modal/or slider to appear asking for name, email and phone.</li>
-                <li>Validate the lead form with required fields and highlight errors requiring the fields with proper validation rules.
-                  <ul>
-                    <li>phone should be validated with digits between 10 and 15 numbers</li>
-                    <li>email should begin with a minimum of two alpha characters followed by the @ symbol followed by a minimum of two alpha characters followed by a period, and ending with a minimum of two alpha characters after the period.</li>
-                  </ul>
-                </li>
-                <li>Check in the final landing page and then email the team letting us know you have completed this challenge - <a href="mailto:marketing-developers@bisk.com">marketing-developers@bisk.com</a></li>
-              </ul>
-            </P>
-            <div class="col-md-12"><img src="website-challenge.png" /></div>
+        <div class="row height-500 bg-hero">
+          <div class="content col-md-12 col-lg-12 d-flex align-items-center">
+            <div class="col-lg-1 col-md-1 d-none d-md-block"></div>
+            <div class="col-lg-7 col-md-7 white-text mt-4">
+              <p class="header light-text mt-5">
+                <strong>We've created the product that will help your startup to look even better.</strong>
+              </p>
+              <p class="mt-4 subheader light-text">
+                You have the design, you have the code
+              </p>
+            </div>
           </div>
+        </div>
+        <div class="row height-500 d-flex align-items-center border-bottom">
+          <div class="col-lg-1 col-md-1 d-none d-md-block"></div>
+          <div class="col-lg-5 col-md-5">
+               <h3 class="dark-grey-text">We've created the product that will help your startup to look better.</h3>
+               <p class="mid-grey-text light-text">
+                 Startup Design Framework contains components and complex blocks which can easily be integrated into almost any design. Responsive layout, clear grid, retina ready.
+               </p>
+          </div>
+        </div>
+        <div class="row height-370">
+          <div class="col-lg-1 col-md-1 d-none d-md-block"></div>
+          <div class="col-lg-3 col-md-3 push-down-card">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title dark-grey-text">
+                  High Resolution
+                </p>
+                <p class="card-text mid-grey-text light-text">
+                  We did a 2.5K size high resolution photo that will suit even for a very large site.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 push-down-card">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title dark-grey-text">
+                  Easy to use
+                </p>
+                <p class="card-text mid-grey-text light-text">
+                  To get started, you select the desired sample and base the entire website on it. It's that simple!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 push-down-card">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title dark-grey-text">
+                  Feel our design
+                </p>
+                <p class="card-text mid-grey-text light-text">
+                  Samples will show you the feeling on how to play around using the components.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row height-145 bg-grey">
+
+        </div>
+        <div class="row height-500 bg-grey">
+          <div class="col-lg-5 col-md-5 bg-product"></div>
+          <div class="col-lg-1 col-md-1 d-none d-md-block"></div>
+          <div class="col-lg-5 col-md-5 d-flex align-items-center">
+            <i class="fas fa-desktop fa-3x"></i>
+            <i class="fas fa-trophy fa-3x"></i>
+            <i class="far fa-user-circle fa-3x"></i>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+
         </div>
       </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

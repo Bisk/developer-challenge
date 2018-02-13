@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
+body {
+  font-family: "Roboto", sans-serif; }
+
+.card {
+  border: 0; }
+
+.push-down-card {
+  padding-top: 100px; }
+  @media screen and (max-width: 765px) {
+    .push-down-card {
+      padding-top: 0; } }
+
+.light-text {
+  font-weight: 300 !important; }
+
+.dark-grey-text {
+  color: #2E404E; }
+
+.mid-grey-text {
+  color: #7F8C8D; }
+
+.header {
+  font-size: 2rem; }
+
+.subheader {
+  font-size: 1.8rem; }
+
+.landing-nav button {
+  margin-left: 55px;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  background-color: #29BB9C;
+  cursor: pointer; }
+  .landing-nav button:hover {
+    background-color: #209179; }
+.landing-nav li {
+  margin-right: 25px; }
+
+.icon-row {
+  padding-bottom: 300px; }
+  .icon-row i {
+    padding-right: 50px; }
+
+.active-icon {
+  color: #29BB9C; }
+
+.brand-image {
+  height: 45px;
+  width: 45px; }
+
+.brand-title {
+  font-size: 25px; }
+
+.bg-hero {
+  background: url(https://raw.githubusercontent.com/Bisk/developer-challenge/master/resources/hero-image.jpg);
+  background-color: #222222;
+  background-blend-mode: screen;
+  background-size: cover; }
+
+.bg-product {
+  background: url(https://raw.githubusercontent.com/Bisk/developer-challenge/master/resources/product-image.jpg);
+  background-size: cover; }
+
+.img-product {
+  width: 100%;
+  height: 100%; }
+
+.bg-grey {
+  background-color: #2E404E;
+  color: #FFFFFF; }
+
+.content {
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  height: inherit;
+  padding: 20px; }
+
+.white-text {
+  color: #FFFFFF !important; }
+
+.height-100 {
+  min-height: 100px; }
+
+.height-500 {
+  min-height: 500px; }
+
+.height-370 {
+  min-height: 370px; }
+
+.height-145 {
+  min-height: 145px; }
+
+.border-bottom {
+  border-bottom: 1px solid #EEEEEE; }
+
+/*# sourceMappingURL=style.css.map */
