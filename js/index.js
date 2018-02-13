@@ -22,6 +22,10 @@ var app = new Vue({
         passed: {
           valid: false,
           message: 'Email address is not valid'
+        },
+        no_beginning_digit: {
+          valid: false,
+          message: 'Email cannot begin with number'
         }
       },
       phone: {
@@ -64,18 +68,25 @@ var app = new Vue({
       }
     },
     verify_email: function(email) {
-      let trimmed = this.trim(email);
+      let trimmed = this.trim(email).toUpperCase();
 
       if (email != '') {
         this.validation.email.not_empty = true;
       } else {
         this.validation.email.not_empty = false;
       }
-      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(trimmed)) {
-        this.validation.email.passed = true;
+
+      if (/^\d/.test(trimmed)) {
+        this.validation.email.no_beginning_digit = false;
       } else {
-        this.validation.email.passed = false; 
+        this.validation.email.no_beginning_digit = true;
+        if (/^[\w!#$%&'*+/=?`{|}~^-]+(?:\.[\w!#$%&'*+/=?`{|}~^-]+)*@(?:[A-Z]{2,}\.)+[A-Z]{2,}$/.test(trimmed)) {
+          this.validation.email.passed = true;
+        } else {
+          this.validation.email.passed = false;
+        }
       }
+
     },
     verify_phone: function(phone) {
       const prohibited_numbers = [
