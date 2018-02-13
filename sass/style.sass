@@ -17,7 +17,7 @@ body
   border: 0
 
 .push-down-card
-  padding-top: 100px
+  padding-top: 80px
   @media screen and (max-width: 765px)
     padding-top: 0
 
@@ -37,16 +37,29 @@ body
   font-size: 1.80rem
 
 .landing-nav
-  button
-    margin-left: 55px
+  .nav-link
+    color: $mid-grey !important
+    &:hover
+      border-top: 4px solid $green !important
+
+.top-nav
+  .btn-signin
+    margin-left: 25px
+    @media screen and (max-width: 765px)
+      margin-left: 0
     padding-left: 25px !important
     padding-right: 25px !important
+    padding-top: 10px !important
+    padding-bottom: 10px !important
     background-color: $green
     cursor: pointer
+    color: $white !important
+    border-radius: 8px
     &:hover
       background-color: $dark-green
-  li
-    margin-right: 25px
+
+// .navbar-toggler[aria-expanded="false"]
+//   margin-right: -70%
 
 .icon-row
   padding-bottom: 300px
@@ -64,13 +77,13 @@ body
   font-size: 25px
 
 .bg-hero
-  background: url(https://raw.githubusercontent.com/Bisk/developer-challenge/master/resources/hero-image.jpg)
+  background: url(../resources/hero-image.jpg)
   background-color: $black
   background-blend-mode: screen
   background-size: cover
 
 .bg-product
-  background: url(https://raw.githubusercontent.com/Bisk/developer-challenge/master/resources/product-image.jpg)
+  background: url(../resources/product-image.jpg)
   background-size: cover
 
 .img-product
@@ -104,3 +117,6 @@ body
 
 .border-bottom
   border-bottom: 1px solid $light-grey
+
+.invalid-input
+  border-color: red !important
