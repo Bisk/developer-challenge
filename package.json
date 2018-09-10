@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "description": "Yeoman workflow for ux-frontend",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css -w"
+  },
   "dependencies": {
     "imagemin": "^4.0.0"
   },
@@ -31,6 +34,7 @@
     "grunt-usemin": "~2.4.0",
     "http-proxy": "^1.14.0",
     "load-grunt-tasks": "~0.6.0",
+    "node-sass": "^4.9.3",
     "time-grunt": "~0.4.0"
   },
   "engines": {
