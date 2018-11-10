@@ -96,7 +96,39 @@
           </div>
           <h3 class="font-weight-light mb-4">Multi useful components</h3>
           <p>Startup Design Framework contains components and complex blocks which can easily be integrated into almost any design. All of these components are made in the same style.</p>
-          <button type="button" class="btn btn-outline-success mt-5 px-4 text-uppercase">Try It Now</button>
+          <button type="button" class="btn btn-outline-success mt-5 px-4 text-uppercase" data-toggle="modal" data-target="#modal">Try It Now</button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade text-uppercase font-weight-bold" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-success ">
+            <h5 class="modal-title text-white" id="exampleModalLabel">Try It Now</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="form-control border-0 p-0" id="fname" placeholder="John">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control border-0 p-0" id="lname" placeholder="Doe">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Telephone Number</label>
+                  <input type="text" class="form-control border-0 p-0" id="phone" placeholder="(800) 555-1212">
+                </div>
+                <div class="form-group">
+                  <label for="email">E-Mail</label>
+                  <input type="text" class="form-control border-0 p-0" id="email" placeholder="Someone@hotmail.com">
+                </div>
+              </form>
+          </div>
         </div>
       </div>
     </div>
