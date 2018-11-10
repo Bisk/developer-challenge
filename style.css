@@ -3,12 +3,13 @@ body{
 }
 .hero{
   height: 500px;
+  background-image: linear-gradient(to right, rgba(44,62,80,.25), rgba(44,62,80,.25)), url(resources/hero-image.jpg);
+  background-size: cover;
+
 /*
-  background-image: rgba(44,62,80,.5), url(resources/hero-image.jpg);
-  background-size: auto, cover;
-*/
   background-image: url(resources/hero-image.jpg);
   background-size: cover;
+*/
   
 }
 
@@ -31,16 +32,8 @@ body{
   height: 340px;
   padding-top: 60px;
 }
-/*
-.font-bold{
-  font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-}
-.font-light{
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-}
-*/
 .hero-text {
-  padding-top: 16%;
+  padding-top: 18%;
 }
 
 .navbar {
@@ -48,4 +41,38 @@ body{
 }
 h2{
   font-size: 2.2rem;
+}
+.navy-text{
+  color: #2c3e50 !important;
+}
+.grey-text{
+  color: #7f8c8d !important;
+}
+.lgrey-text{
+  color: #bdc3c7 !important;
+}
+.grey-bg{
+  background-color: #7f8c8d;
+}
+.grey-outline{
+  border-color: #7f8c8d;
+}
+.green-bg{
+  background-color: #1abc9c;
+}
+.navy-bg{
+  background-color: #2c3e50;
+}
+.neon-text{
+  color: #2ecc71;
+}
+.neon-outline{
+  border-color: #2ecc71;
+}
+label{
+  margin-bottom: 0;
+  color: #555e5f;
+}
+.navbar-brand {
+  font-size: 24px;
 }
